@@ -1,39 +1,11 @@
-<!-- Below is a list of key commands for using Github presentations
+# Serverless Angular Architecture
+### Reginald Davis
 
-~~~~~~~
-
---- ==> Denotes the start of a horizontal slide
-+++ ==> Denotes the start of a vertical slide
-
-```<language>/n<code>``` ==> Syntax highlighting
-
-*<text>* || _<text>_ ==> Will make text italic
-**<text>** || __<text>__ ==> Will make text bold
-
-#<text> ==> h1 tag
-##<text> ==> h2 tag
-######<text> ==> h6 tag
-
-![<image_name>](<path/to/img>) ==> Creates images
-
-http://<domain_name>.com ==> Creates links
-
-> <text> ==> Creates blockquotes
-
-- [x] || [ ] ==> Creates checkboxes
-
-Note: <text> ==> Creates speaker notes
-
-~~~~~~~ -->
-
-#Serverless Angular Architecture
-###Reginald Davis
-
-#####Twitter: @madblkman
+##### Twitter: @madblkman
 
 ---
 
-##What are we going to talk about today?
+## What are we going to talk about today?
 
 * What exactly is "Serverless"?
 * The pros and cons of using serverless architecture? |

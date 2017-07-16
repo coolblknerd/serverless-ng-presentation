@@ -1,11 +1,11 @@
-#Serverless Angular Architecture
-###Reginald Davis
+# Serverless Angular Architecture
+### Reginald Davis
 
-#####Twitter: @madblkman
+##### Twitter: @madblkman
 
 ---
 
-##What are we going to talk about today?
+## What are we going to talk about today?
 
 * What exactly is "Serverless"?
 * The pros and cons of using serverless architecture? |
