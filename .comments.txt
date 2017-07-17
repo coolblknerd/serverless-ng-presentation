@@ -1,4 +1,4 @@
-<!-- Below is a list of key commands for using Github presentations
+Below is a list of key commands for using Github presentations
 
 ~~~~~~~
 
@@ -24,4 +24,24 @@ http://<domain_name>.com ==> Creates links
 
 Note: <text> ==> Creates speaker notes
 
-~~~~~~~ -->
+~~~~~~
+
+"The essence of the serverless trend is the absence of the server concept during software development."
+
+Serverless frees the software developer from deployment concerns and allows them to focus on factoring the application following logical encapsulation lines.
+
+With IaaS we are used to paying for servers' uptime regardless of their utilization level. This typically leads to a lot of waste given that a degree of overprovisioning is often the only sensible answer to capacity planning.
+
+The lightweight nature of the programming abstraction in serverless combined with the economy of scale of the generic runtime enable a much quicker provisioning of the required computing resources (CPU, memory) within the infrastructure that runs the code. Functions are created, executed, and resources are reclaimed. The end user is paying only for the actual time and resources consumed.
+
+Vendors:
+- AWS Lambda
+- Micorsoft Azure Functions
+- Google Cloud Functions
+- WebTask
+
+Use Cases:
+- Lightweight HTML apps
+- API backends
+- API gateways
+- sandboxing untrusted code
