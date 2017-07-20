@@ -11,7 +11,7 @@
 - The pros and cons of using serverless architecture? |
 - Parts of a serverless architecture |
 - How much is this thing going to cost me? |
-- What are some use-cases |
+- Is this something worth implementing on my next project? |
 
 ---
 
@@ -112,28 +112,93 @@ Note: IOPipe.com, AWS Step Functions
 
 Complex Architecture
 
-- How small should a function be?
-- How many functions are too many functions?
+- How small should a function be? |
+- How many functions are too many functions? |
+- Function management |
 
 ---
 
 Hacks to maintain function performance (i.e. - "cold starts").
 
+Note: Creating a CloudWatch scheduled to invoke the function to maintain performance
+
 ---
 
 Security
 
-Note: How safe is it for a client-side app to talk directly to a DBaaS (Database as a Service)?
-
----
-
-Repetitive Logic
-
-Note: What happens when you need to migrate to a new database?
+Note: How safe is it for a client-side app to talk directly to a DBaaS (Database as a Service)? What about Auth0? What is the best way to store JWTs? (Hint: Place them in a cookie to protect against CSRF(cross-script request forgery) with modern web frameworks)
 
 ---
 
 # Parts used in a serverless architecture
+
+---
+
+## S3
+
+---
+
+S3 is a object storage that can be used to host everything from websites, images, videos, and a host of other files.
+
+---
+
+![S3 Bucket](assets/s3-bucket.png)
+
+---
+
+![S3 CORS](assets/s3-cors-config.png)
+
+---
+
+## Lambda
+
+---
+
+Lambda is AWS' FaaS. It will be used as our backend to handle backend processes.
+
+---
+
+## Elastic Transcoder
+
+---
+
+This is a service offered by AWS that will allow us to transcode files to any format we request.
+
+---
+
+![Transcode Lambda](assets/transcode-lambda.png)
+
+---
+
+## AuthO
+
+---
+
+A microservice used to authenticate and manage users.
+
+---
+
+![Auth0 Login](assets/auth0-login.png)
+
+---
+
+![Auth0 JWT Tokens](assets/auth0-jwt-tokens.png)
+
+---
+
+## Firebase
+
+---
+
+This is a DBaaS (Database as a Service) offered from Google which will allow a client-side application to communicate directly to a database in the cloud.
+
+---
+
+![Auth0 JWT Tokens](assets/firebase-initialize.png)
+
+---
+
+![Auth0 JWT Tokens](assets/firebase-get-videos.png)
 
 ---
 
@@ -145,36 +210,7 @@ An API Gateway is a HTTP Sever where endpoints are defined in configuration and 
 
 ---
 
-This is a necessary part of a serverless architecture since Lambda/FaaS are not made to talk directly to the outside world.
-
----
-
-## S3
-
----
-
-S3 is a object storage that can be used to host everything from websites, images, videos, and a host of other files.
-
-## Lambda
-
----
-
-Lambda is AWS' FaaS. It will be used as our backend to process videos.
-
----
-
-## AuthO
-
----
-
-## Elastic Transcoder
-
----
-
-## Firebase
-
----
-
+This is a necessary part of a serverless architecture if you need to make HTTP calls since Lambda/FaaS are not made to talk directly to the outside world.
 
 ---
 
