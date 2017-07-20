@@ -34,6 +34,18 @@ With IaaS we are used to paying for servers' uptime regardless of their utilizat
 
 The lightweight nature of the programming abstraction in serverless combined with the economy of scale of the generic runtime enable a much quicker provisioning of the required computing resources (CPU, memory) within the infrastructure that runs the code. Functions are created, executed, and resources are reclaimed. The end user is paying only for the actual time and resources consumed.
 
+Ephermeral compute containers used to execute functions.
+
+***With FaaS you need to write the function ahead of time to assume parallelism, but from that point on the FaaS provider automatically handles all scaling needs.***
+
+---
+
+State
+
+In short you should assume that for any given invocation of a function none of the in-process or host state that you create will be available to any subsequent invocation. (FaaS functions are stateless)
+
+--
+
 Vendors:
 - AWS Lambda
 - Micorsoft Azure Functions
@@ -45,3 +57,10 @@ Use Cases:
 - API backends
 - API gateways
 - sandboxing untrusted code
+- image/video manipulation
+- data validation
+
+Best Practices
+- Functional progarmming
+- Use types (typescript, Java, Go)
+- Take advantage of a database, cache, or NFS for state storing across requests

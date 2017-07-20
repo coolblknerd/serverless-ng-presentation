@@ -9,7 +9,7 @@
 
 - What exactly is "Serverless"? |
 - The pros and cons of using serverless architecture? |
-- Parts of a serverless architecture
+- Parts of a serverless architecture |
 - How much is this thing going to cost me? |
 - What are some use-cases |
 
@@ -19,15 +19,15 @@
 
 ---
 
-"Serverless" refers to an architecture that depends on "Baas" (Backend as a Service) or custom code that lives in an temporary container (Function as a Service || "FaaS"). |
+"Serverless" refers to an architecture that depends on "Baas" (Backend as a Service) or custom code that lives in an temporary container (Function as a Service || "FaaS").
 
 ---
 
-The name "Serverless" is a bit of a misnomer and refers more to the fact that the user running the code the code doesn't have to purchase or rent a server or VM to do so. |
+The name "Serverless" is a bit of a misnomer and refers more to the fact that the user running the code the code doesn't have to purchase or rent a server or VM to do so.
 
 ---
 
-Serverless architecture isn't a end all, be all solution to your back-end. It can be used in addition to typical server-side code or your back-end can be entirely serverless. |
+Serverless architecture isn't a end all, be all solution to your back-end. It can be used in addition to typical server-side code or your back-end can be entirely serverless.
 
 ---
 
@@ -145,6 +145,39 @@ An API Gateway is a HTTP Sever where endpoints are defined in configuration and 
 
 ---
 
+This is a necessary part of a serverless architecture since Lambda/FaaS are not made to talk directly to the outside world.
+
+---
+
+## S3
+
+---
+
+S3 is a object storage that can be used to host everything from websites, images, videos, and a host of other files.
+
+## Lambda
+
+---
+
+Lambda is AWS' FaaS. It will be used as our backend to process videos.
+
+---
+
+## AuthO
+
+---
+
+## Elastic Transcoder
+
+---
+
+## Firebase
+
+---
+
+
+---
+
 ### Resources and References
 
 - [AuthO - What is Serverless](https://auth0.com/blog/what-is-serverless/)
@@ -153,3 +186,4 @@ An API Gateway is a HTTP Sever where endpoints are defined in configuration and 
 - [What is Serverless Computing?](https://www.iron.io/what-is-serverless-computing/)
 - [Serverless Framework](https://serverless.com/)
 - [WTF is Operations #Serverless](https://charity.wtf/2016/05/31/wtf-is-operations-serverless/)
+- []
