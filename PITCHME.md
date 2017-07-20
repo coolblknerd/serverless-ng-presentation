@@ -214,6 +214,58 @@ This is a necessary part of a serverless architecture if you need to make HTTP c
 
 ---
 
+# How much is this going to cost?
+
+---
+
+The Lambda free tier includes 1M free requests per month and 400,000 GB-seconds of compute time per month.
+
+---
+
+### Duration
+
+"Duration is calculated from the time your code begins executing until it returns or otherwise terminates, rounded up to the nearest 100ms. The price depends on the amount of memory you allocate to your function. You are charged $0.00001667 for every GB-second used."
+
+---
+
+The cost will vary based upon how you use your lambdas (memory allocation, duration of execution)
+
+---
+
+### S3
+
+S3's cost is dependent on how much storage used, so it varies.
+
+---
+
+### Firebase
+
+Firebase has a free tier that allows up to simultaneous 100 connections, 1 GB stored, 10 GB/month downloaded, but it doesn't have automated backups (I'm sure there is a hack around this). From here it can cost $25/month for anything more.
+
+---
+
+### AuthO
+
+Free for up to 7,000 users and unlimited logins.
+
+---
+
+# Is this something worth implementing on my next project?
+
+---
+
+Parts...not all...
+
+---
+
+The configuration is the toughest hurdle to overcome.
+
+---
+
+The future seems bright for serverless as long as it continues to progress.
+
+---
+
 ### Resources and References
 
 - [AuthO - What is Serverless](https://auth0.com/blog/what-is-serverless/)
@@ -222,4 +274,20 @@ This is a necessary part of a serverless architecture if you need to make HTTP c
 - [What is Serverless Computing?](https://www.iron.io/what-is-serverless-computing/)
 - [Serverless Framework](https://serverless.com/)
 - [WTF is Operations #Serverless](https://charity.wtf/2016/05/31/wtf-is-operations-serverless/)
-- []
+- AWS Lambda in Action by Manning Publications
+- Serverless Architectures on AWS by Manning Publications
+- [A Cloud Guru](https://acloud.guru)
+
+---
+
+# Want to learn something fast??
+
+---
+
+# Give a talk!!!
+
+---
+
+# Follow my progress on this app on my Github!
+
+https://github.com/madblkman/ng4-serverless-video
