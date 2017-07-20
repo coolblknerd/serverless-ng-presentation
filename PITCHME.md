@@ -158,6 +158,22 @@ Lambda is AWS' FaaS. It will be used as our backend to handle backend processes.
 
 ---
 
+![Lambda Environment Variables](assets/lambda-env-var.png)
+
+---
+
+![Lambda Languages](assets/lambda-languages.png)
+
+---
+
+![Lambda Monitoring](assets/lambda-monitoring.png)
+
+---
+
+![Lambda Payload](assets/lambda-event-payload.png)
+
+---
+
 ## Elastic Transcoder
 
 ---
@@ -194,11 +210,15 @@ This is a DBaaS (Database as a Service) offered from Google which will allow a c
 
 ---
 
-![Auth0 JWT Tokens](assets/firebase-initialize.png)
+![Firebase JSON](assets/firebase-json.png)
 
 ---
 
-![Auth0 JWT Tokens](assets/firebase-get-videos.png)
+![Firebase initialize](assets/firebase-initialize.png)
+
+---
+
+![Firebase Get Videos](assets/firebase-get-videos.png)
 
 ---
 
@@ -211,6 +231,10 @@ An API Gateway is a HTTP Sever where endpoints are defined in configuration and 
 ---
 
 This is a necessary part of a serverless architecture if you need to make HTTP calls since Lambda/FaaS are not made to talk directly to the outside world.
+
+---
+
+![API Gateway](assets/api-gateway-example.png)
 
 ---
 
